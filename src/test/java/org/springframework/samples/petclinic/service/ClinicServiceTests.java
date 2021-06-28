@@ -123,9 +123,9 @@ class ClinicServiceTests {
 	void shouldUpdateOwner() {
 		Owner owner = this.owners.findById(1);
 		String oldLastName = owner.getLastName();
-		String newLastName = oldLastName + "X";
+		String newLastName = oldLastName + "Xi";
 
-		owner.setLastName(newLastName);
+		owner.setLastName(newLastName );
 		this.owners.save(owner);
 
 		// retrieving new name from database
